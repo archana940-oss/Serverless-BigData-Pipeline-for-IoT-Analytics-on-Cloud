@@ -40,7 +40,7 @@ cleaned_data = DynamicFrame.fromDF(df, glueContext, "cleaned_data")
 # -----------------------------
 # Save Processed Data
 # -----------------------------
-output_path = "s3://YOUR-BUCKET-NAME/processed-data/"
+output_path = "s3://iot-bigdata-pipeline-archana2026/"
 
 glueContext.write_dynamic_frame.from_options(
     frame=cleaned_data,
